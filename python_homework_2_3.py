@@ -12,7 +12,7 @@ def import_json_news():
 
 
 def parse_news(news_feed):
-    """Разбор тексов новостей"""
+    """Разбор текстов новостей"""
     parsed_description = []
     for line in news_feed["rss"]["channel"]["items"]:
         parsed_description.append(line["description"].split(" "))
